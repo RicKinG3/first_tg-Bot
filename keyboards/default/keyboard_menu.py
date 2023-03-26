@@ -6,8 +6,7 @@ kb_menu = ReplyKeyboardMarkup(keyboard=[
         KeyboardButton(text='Случайная книга'),
     ],
     [
-        KeyboardButton(text='100'),
-        KeyboardButton(text='111'),
+        KeyboardButton(text='Рейтинг книг'),
     ],
     [
         KeyboardButton(text='another'),
