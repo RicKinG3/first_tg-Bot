@@ -20,12 +20,6 @@ if __name__ == '__main__':
     executor.start_polling(dp, on_startup=on_startup)
 
 
-# async def sendSticker(chat_id: int, sticker):
-#     await  bot.send_animation(chat_id=chat_id, animation=sticker)
-#
-# async def sendText(chat_id: int, text: str):
-#     await bot.send_message(chat_id=chat_id, text=text)
-
 # @dp.message_handler()
 # async def getMessage(message: types.Message):  # this simple write  types.Message as message
 #     # chat_id_types = types.Message.chat.id #var with types.Message
