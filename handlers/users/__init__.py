@@ -7,6 +7,7 @@ from  .inline_menu import dp
 from .buttons import dp
 from .buttons_evaluation import dp
 
+from .register import dp
 from .errors import dp # обязательно в конце так как они выполняются по порядку
 
 

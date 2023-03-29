@@ -6,7 +6,14 @@
 
 from aiogram import Bot, Dispatcher, types, exceptions
 from  data import  config
+from aiogram.contrib.fsm_storage.memory import MemoryStorage
+
 
 bot = Bot(token=config.BOT_TOKEN, parse_mode=types.ParseMode.HTML)
-# Получите объект dp - Dispatcher:
-dp = Dispatcher(bot)
+
+storage = MemoryStorage()
+
+# Получите объект dp - Dispatcher: и подключили хранилице ко объекту
+dp = Dispatcher(bot, storage=storage)
+
+#
