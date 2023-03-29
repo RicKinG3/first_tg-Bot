@@ -1,5 +1,5 @@
-
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 # row_width = count button in row
 ikb_menu = InlineKeyboardMarkup(row_width=2,
                                 inline_keyboard=[
@@ -9,13 +9,12 @@ ikb_menu = InlineKeyboardMarkup(row_width=2,
 
                                     ],
                                     [
-                                        InlineKeyboardButton(text='Перейти к рейтингу книг', callback_data='Перейти к рейтингу книг')
+                                        InlineKeyboardButton(text='Перейти к рейтингу книг',
+                                                             callback_data='Перейти к рейтингу книг')
                                     ],
                                     [
                                         InlineKeyboardButton(text='Заменить кнопки меню',
                                                              callback_data='Кнопки 2')
-
                                     ]
 
                                 ])
-

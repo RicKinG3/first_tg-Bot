@@ -10,8 +10,7 @@ kb_menu = ReplyKeyboardMarkup(keyboard=[
     ],
     [
         KeyboardButton(text='Информация о авторе'),
-        KeyboardButton(text='another1'),
+        KeyboardButton(text='Регистрация'),
         KeyboardButton(text='another2'),
-
     ]
 ], resize_keyboard= True) # ЧТОБ КНОПКИ НЕ БЫЛИ НА ПОЛ ЭКРАНА

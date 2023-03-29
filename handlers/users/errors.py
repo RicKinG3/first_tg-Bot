@@ -1,8 +1,9 @@
-from  aiogram import  types , exceptions
-from  loader import  dp
+from aiogram import types, exceptions
+from loader import dp
+
 
 @dp.message_handler()
-async  def command_error(message:  types.Message):
+async def command_error(message: types.Message):
     try:
         with open('static/AnimatedSticker_01.tgs', 'rb') as sticker_file:
             sticker = types.InputFile(sticker_file)
@@ -10,4 +11,4 @@ async  def command_error(message:  types.Message):
             await message.answer_sticker(sticker)
     except exceptions.TelegramAPIError as e:
         print(f"Ошибка отправки стикера: {e}")
-    await message.answer(f'Команда {message.text} не найдена :(' )
+    await message.answer(f'Команда "{message.text}" не найдена :(')

@@ -5,9 +5,8 @@
 # к базе данных, установка настроек логирования и т.д.
 
 from aiogram import Bot, Dispatcher, types, exceptions
-from  data import  config
+from data import config
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
-
 
 bot = Bot(token=config.BOT_TOKEN, parse_mode=types.ParseMode.HTML)
 

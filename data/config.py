@@ -11,6 +11,6 @@ load_dotenv()
 
 BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
 
-admins   = [
+admins = [
     1982851211
 ]
