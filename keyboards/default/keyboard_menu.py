@@ -9,7 +9,7 @@ kb_menu = ReplyKeyboardMarkup(keyboard=[
         KeyboardButton(text='Рейтинг книг'),
     ],
     [
-        KeyboardButton(text='another'),
+        KeyboardButton(text='Информация о авторе'),
         KeyboardButton(text='another1'),
         KeyboardButton(text='another2'),
 
